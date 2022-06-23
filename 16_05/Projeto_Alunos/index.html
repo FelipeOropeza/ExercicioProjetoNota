@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  </head>
+  <body>
+
+    <header>
+      <h1 id="titulo"> ALOCSE School</h1>
+      <h4>Conhecimento para o futuro</h4>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Adicionar aluno</h2><hr>
+
+        <ul id="mensagens-erro"></ul>
+        <div class="formulario">
+          <form id="form-aluno">
+            <label for="txt-nome">Nome:</label>
+            <input type="text" id="nome" name="nome" size="30">
+            <label for="txt-n1">Nota 1:</label>
+            <input type="text" id="n1" name="n1" size="2">
+            <label for="txt-n2">Nota 2:</label>
+            <input type="text" id="n2" name="n2" size="2">
+            <label for="txt-n3">Nota 3:</label>
+            <input type="text" id="n3" name="n3" size="2">
+            <button id="adicionar-aluno">Lançar >></button>
+          </form>
+      </div>
+      </section>
+
+      <section>
+
+        <h2 id="titulo">Lista de alunos</h2><hr>
+
+        <table id="tabela-aluno">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Nota 1</th>
+              <th>Nota 2</th>
+              <th>Nota 3</th>
+              <th>Média Final</th>
+              <th>Situação</th>
+            </tr>
+          </thead>
+          <tbody id="alunos">
+            <tr class="aluno">
+              <td class="td-nome">Pedro da Silva</td>
+              <td class="td-n1">0.0</td>
+              <td class="td-n2">0.0</td>
+              <td class="td-n3">8.0</td>
+              <td class="td-media">8</td>
+              <td class="td-situacao">Aprovado</td>
+            </tr>
+            <tr class="aluno">
+              <td class="td-nome">Maria Julia</td>
+              <td class="td-n1">8.0</td>
+              <td class="td-n2">7.0</td>
+              <td class="td-n3">7.0</td>
+              <td class="td-media">8.0</td>
+              <td class="td-situacao">Aprovado</td>
+            </tr>
+            <tr class="aluno">
+              <td class="td-nome">Marcelo Dutra</td>
+              <td class="td-n1">4.0</td>
+              <td class="td-n2">5.0</td>
+              <td class="td-n3">6.0</td>
+              <td class="td-media">8.0</td>
+              <td class="td-situacao">Aprovado</td>
+            </tr>
+            <tr class="aluno">
+              <td class="td-nome">Fabiana Golveia</td>
+              <td class="td-n1">10.0</td>
+              <td class="td-n2">8.0</td>
+              <td class="td-n3">6.0</td>
+              <td class="td-media">8.0</td>
+              <td class="td-situacao">Aprovado</td>
+            </tr>
+            <tr class="aluno">
+              <td class="td-nome">Pedro de Oliveira</td>
+              <td class="td-n1">5.0</td>
+              <td class="td-n2">5.0</td>
+              <td class="td-n3">4.9</td>
+              <td class="td-media">8.0</td>
+              <td class="td-situacao">Aprovado</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+    </main>
+    <script src ="script.js"></script>
+    <script src ="scriptForm.js"></script>
+  </body>
+</html>
